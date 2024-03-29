@@ -1,7 +1,7 @@
 import React from 'react';
 import { work } from "../constants";
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
-import { useTheme, useThemeUpdate } from "../features/ThemeContext";
+import { useTheme } from "../features/ThemeContext";
 
 const ProjectCard = () => {
   const darkMode = useTheme();
@@ -59,6 +59,7 @@ const Project = (props) => {
 
 
   return (
+    
     <motion.div
       onMouseMove={handleMouseMove}
       onMouseLeave={() => { x.set(0); y.set(0) }}
@@ -73,7 +74,9 @@ const Project = (props) => {
         style={{
           transformStyle: "preserve-3d",
           transform: "translateZ(75px)",
-        }}
+          
+        }
+      }
         className='absolute inset-4 place-content-center bg-[#ffffffc4]  rounded-l '
       >
         <div className='absolute inset-0  rounded-l '>
