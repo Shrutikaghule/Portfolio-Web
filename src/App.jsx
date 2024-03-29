@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import About from './components/About';
 import './index.css'
 import { ThemeProvider } from './features/ThemeContext';
-import {AnimationProvider} from './features/Scroll';
 
 const App = () => {
   
@@ -14,9 +13,7 @@ const App = () => {
     <>
     <ThemeProvider >
       <Home  />
-      <AnimationProvider >
       <About />
-      </AnimationProvider>
       <Tech />
       <ProjectCard />
       <Footer/>

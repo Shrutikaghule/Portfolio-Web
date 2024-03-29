@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useTheme , useThemeUpdate} from "../features/ThemeContext";
-import { useScroll, motion } from "framer-motion";
 
 export default function Home() {
   const darkMode=useTheme();
